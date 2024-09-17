@@ -16,13 +16,36 @@
 
     <context-param>
         <param-name>primefaces.THEME</param-name>
-        <param-value>saga</param-value>
+        <param-value>avalon-#{guestPreferences.theme}</param-value>
     </context-param>
-
+	
+	<context-param>
+        <param-name>javax.faces.FACELETS_LIBRARIES</param-name>
+        <param-value>/WEB-INF/primefaces-avalon.taglib.xml</param-value>
+    </context-param>
+    <!--<listener>
+        <listener-class>org.apache.webbeans.servlet.WebBeansConfigurationListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+    </listener>-->
+    <filter>
+        <filter-name>Character Encoding Filter</filter-name>
+        <filter-class>org.primefaces.avalon.filter.CharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <servlet-name>facesServlet</servlet-name>
+        <filter-name>Character Encoding Filter</filter-name>
+    </filter-mapping>
+    
     <servlet>
         <servlet-name>facesServlet</servlet-name>
         <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>facesServlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>facesServlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
@@ -72,8 +95,9 @@
         <extension>svg#fontawesomeregular</extension>
         <mime-type>image/svg+xml</mime-type>
     </mime-mapping>
-
-    <welcome-file-list>
-        <welcome-file>test.xhtml</welcome-file>
+	
+	<welcome-file-list>
+        <welcome-file>dashboard.xhtml</welcome-file>
     </welcome-file-list>
+	
 </web-app>

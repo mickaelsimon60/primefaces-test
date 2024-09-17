@@ -1,0 +1,408 @@
+@charset "ISO-8859-1";
+
+.black {
+    color: black !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-grid {
+    display: grid;
+}
+
+.display-inline-flex {
+    display: inline-flex;
+}
+.display-flex {
+    display: flex;
+}
+.display-flex.ui-datagrid-column {
+    display: flex;
+}
+.display-flex ui-datagrid-column {
+    display: flex;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.width-column {
+    width: 49% !important;
+}
+.width-separator {
+    width: 2% !important;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.no-padding .ui-overlaypanel-content {
+    padding: 0px !important;
+}
+
+a.btn-right, button.btn-right {
+	margin-left: auto !important;
+}
+a.btn-left, button.btn-left {
+	margin-right: auto !important; 
+}
+a.btn-middle {
+	margin: auto;
+}
+
+/******************** ******************/
+
+.custom-datagrid-no-border .ui-datagrid .ui-datagrid-content {
+    padding: 0px;
+    border: none;
+}
+
+.custom-datagrid-no-border .ui-datagrid .ui-panelgrid-cell {
+    background: transparent;
+    border: none;
+}
+
+.custom-datagrid-no-padding .ui-datagrid .ui-panelgrid-cell {
+    padding: 0px;
+}
+
+.custom-datagrid-no-padding .ui-panelgrid .ui-panelgrid-cell {
+    padding: 0px;
+}
+
+/******************** ******************/
+
+.custom-table {
+    padding: 0px;
+    border: 0px transparent;
+}
+
+.custom-table .ui-widget-content {
+    padding: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.custom-table .ui-panel .ui-panel-content {
+    padding: 0px;
+    border: none;
+}
+
+.custom-table .ui-datalist-content ul {
+    margin: 0px;
+}
+
+.custom-table .ui-datalist .ui-paginator-top {
+    border: none;
+    background: white;
+}
+
+.custom-table .ui-datalist .ui-paginator-bottom {
+    border: none;
+    background: white;
+}
+
+.custom-table .ui-datagrid .ui-paginator {
+    border: none;
+    background: white;
+    padding: 3px 5px;
+}
+
+.custom-table .ui-paginator {
+    border: none;
+    background: white;
+}
+
+/******************** ******************/
+
+.custom-table-no-border-head-foot {
+	text-align: left;
+}
+.custom-table-no-border-head-foot thead {
+	display: none;
+	border: none;
+    background: transparent;
+}
+.custom-table-no-border-head-foot tbody {
+	border: none;
+    background: transparent;
+}
+.custom-table-no-border-head-foot tfoot {
+	display: none;
+	border: none;
+    background: transparent;
+}
+.custom-table-no-border-head-foot tr {
+	border: none;
+    background: transparent;
+}
+
+.custom-table-no-border-head-foot td {
+	border: none !important;
+    background: white;
+    /*text-align: center;*/
+}
+
+/******************** ******************/
+
+.custom-table-border-head-foot {
+	text-align: left;
+}
+.custom-table-border-head-foot thead {
+    background: transparent;
+}
+
+.custom-table-border-head-foot thead th {
+    padding: 5px 5px !important;
+}
+
+.custom-table-border-head-foot-color thead th {
+    background: antiquewhite !important;
+}
+
+.custom-table-border-head-foot tbody {
+    background: transparent;
+}
+.custom-table-border-head-foot tfoot {
+    background: transparent;
+}
+.custom-table-border-head-foot tr {
+    background: transparent;
+}
+.custom-table-border-head-foot tr:hover {
+  background-color: #d2e5f1 !important;
+}
+.custom-table-border-head-foot tr.ui-state-highlight:hover {
+  background-color: #007bffa3 !important;
+}
+.custom-table-border-head-foot td {
+    background: transparent;
+}
+
+/******************** ******************/
+	
+.custom-table-border-head-foot-no-hover  tr:hover {
+  background-color: #ffffff !important;
+}
+
+.custom-table-small-padding .ui-datatable-header {
+	padding: 0.5rem 0.5rem !important;
+}
+
+.custom-table-small-padding tr {
+    padding: 4px !important;
+}
+.custom-table-small-padding td {
+    padding: 4px !important;
+}
+.custom-table-no-padding tr {
+    padding: 0px !important;
+}
+.custom-table-no-padding td {
+    padding: 0px !important;
+}
+
+.custom-table-flex-row tr {
+	display: flex;
+}
+
+.custom-table-fifty-percent-column td 
+	{width: 50%;}
+
+.custom-table-twenty-percent-column td 
+	{width: 20%;}
+
+.custom-table-grid-row tr {
+	display: grid;
+}
+
+.custom-table-auto-width table {
+    width: auto;
+}
+
+.custom-table-auto-margin table {
+    margin: auto;
+}
+
+.info-tab  td {
+    padding: 5px 10px;
+}
+
+.column-top-align td {
+    vertical-align: top;
+}
+
+/******************** ******************/
+
+.custom-dialog-loading.ui-dialog .ui-dialog-titlebar {
+    background: #80808080 !important;
+    border: none;
+    display: none;
+}
+.custom-dialog-loading .ui-widget-content {
+    margin: auto !important;
+    padding: 0px !important;
+    border: none !important;
+    background: #80808080 !important;
+}
+
+.custom-dialog.ui-dialog .ui-dialog-titlebar {
+    background: white !important;
+    border: none;
+}
+.custom-dialog .ui-widget-content {
+    margin: auto !important;
+    padding: 5px 10px !important;
+    padding-top: 0px !important;
+    border: none !important;
+    background: white !important;
+}
+
+.custom-dialog-no-overflow .ui-widget-content {
+	overflow: hidden !important;
+}
+
+/******************** ******************/
+
+.width-ten-percent {
+     width: 10% !important;
+}
+.width-fifteen-percent {
+     width: 15% !important;
+}
+.width-twenty-percent {
+     width: 20% !important;
+}
+.width-twenty-five-percent {
+     width: 25% !important;
+}
+.width-thirty-percent {
+     width: 30% !important;
+}
+.width-thirty-five-percent {
+     width: 35% !important;
+}
+.width-fifty-percent {
+     width: 50% !important;
+}
+.width-sixty-five-percent {
+     width: 65% !important;
+}
+.width-seventy-percent {
+     width: 70% !important;
+}
+.width-seventy-five-percent {
+     width: 75% !important;
+}
+.width-eighty-percent {
+     width: 80% !important;
+}
+.width-eighty-five-percent {
+     width: 85% !important;
+}
+.width-one-hundred-percent {
+     width: 100% !important;
+}
+.width-five-hundred-px {
+    width: 500px;
+    max-width: 500px;
+}
+.width-two-hundred-px {
+    width: 200px;
+    max-width: 200px;
+}
+.width-three-hundred-px {
+    width: 300px;
+    max-width: 300px;
+}
+.width-one-hundred-pencent-max-five-hundred-px {
+	width: 100%;
+    max-width: 500px;
+}
+
+.padding-ten-px {
+     padding: 10px;
+}
+.min-width-four-hundred-px {
+     min-width: 400px;
+}
+
+.min-width-one-hundred-fifty-px {
+     min-width: 150px;
+}
+
+/*.ui-tooltip {
+    border: none;
+    box-shadow: 0 0 10px 0 #ddd;
+    -moz-box-shadow: 0 0 10px 0 #ddd;
+    -webkit-box-shadow: 0 0 10px 0 #ddd;
+    color: blue !important;
+    background: transparent;
+}*/
+
+.ui-chkbox {
+	margin-right: 10px !important;
+}
+
+.ui-picklist .ui-picklist-list {
+	width: 250px !important;
+	border: 1px solid #dee2e6 !important;
+}
+.ui-picklist .ui-picklist-caption {
+    padding: 4px 0 !important;
+}
+
+.ui-tooltip .ui-tooltip-text {
+    border: none;
+    background-color: black !important;
+    color: white !important;
+}
+
+.ui-datatable-empty-message {
+    font-size: 16px;
+    width: max-content;
+    text-align: center;
+}
+
+.ui-datatable-empty-message tr {
+	border: none !important;
+}
+
+.ui-datatable-empty-message td {
+	border: none !important;
+	padding: 10px !important;
+	background: antiquewhite
+}

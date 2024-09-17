@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+
+/******************** ******************/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("#{resource['fonts/poppins/Poppins-Regular.ttf']}");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("#{resource['fonts/poppins/Poppins-Bold.ttf']}");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("#{resource['fonts/poppins/Poppins-Medium.ttf']}");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("#{resource['fonts/montserrat/Montserrat-Bold.ttf']}");
+}
+
+/******************** ******************/
+
+html {
+    background-color: dimgrey !important;
+}
+
+body {
+	
+    background-color: dimgrey !important;
+    -webkit-animation: bugfix infinite 1s;
+}
+
+/* Advanced Checkbox Hack */
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+
+/******************** ******************/
+
+input:focus::-webkit-input-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; }
+input:focus:-moz-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; } /* Firefox 18- */
+input:focus::-moz-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; } /* oldIE ;) */
+
+[placeholder]::-webkit-input-placeholder {
+  font-size: 16px;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0;
+  font-size: 16px;
+}
+
+/******************** ******************/
+
+.pe-blockui {
+	left: 40% !important;
+	right: 40% !important;
+    background: white !important;
+    border-radius: 10px;
+}
+
+.pe-blockui-content {
+	display: grid;
+}
+
+.ui-blockui-content {
+    background: white !important;
+    border-radius: 10px;
+}
+
+/******************** ******************/
+
+table {
+  border-collapse: collapse;
+}
+
+a, button, button.ui-button {
+    font-size: 13px !important;
+}

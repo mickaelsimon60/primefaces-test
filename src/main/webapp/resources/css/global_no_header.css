@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+/******************** ******************/
+
+.ui-sticky {
+	top: 0px !important;
+}
+
+@media (max-width: 960px) {
+	.ui-sticky {
+   		top: 0px !important;
+	}
+}
+
+/******************** ******************/

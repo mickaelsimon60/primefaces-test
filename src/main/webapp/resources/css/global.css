@@ -1,0 +1,243 @@
+@charset "ISO-8859-1";
+
+/******************** ******************/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("#{resource['fonts/poppins/Poppins-Regular.ttf']}");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("#{resource['fonts/poppins/Poppins-Bold.ttf']}");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("#{resource['fonts/poppins/Poppins-Medium.ttf']}");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("#{resource['fonts/montserrat/Montserrat-Bold.ttf']}");
+}
+
+.ui-widget {
+	font-family: Poppins-Regular !important;
+}
+
+/******************** ******************/
+
+html {
+    background-color: #EEEEEE;
+  	min-height: 100%;
+}
+
+body {
+	
+    min-width:600px;
+    margin: 0px;
+    font-weight: normal;
+    font-family: Poppins-Regular;
+    background-color: #EEEEEE;
+  	min-height: 100%;
+    
+    -webkit-animation: bugfix infinite 1s;
+}
+
+/* Advanced Checkbox Hack */
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+
+/******************** ******************/
+
+input:focus::-webkit-input-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; }
+input:focus:-moz-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; } /* Firefox 18- */
+input:focus::-moz-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { 
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0; } /* oldIE ;) */
+
+[placeholder]::-webkit-input-placeholder {
+  font-size: 14px;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0;
+  font-size: 14px;
+}
+
+/******************** ******************/
+
+.layout-wrapper .layout-menu-container {
+	height: calc(100vh - 60px) !important;
+	/*height: 90% !important;*/
+}
+
+.layout-wrapper .layout-custom-no-header {
+    padding: 0px 0px 0px 0px;
+    min-height: 100vh;
+}
+
+.layout-wrapper .layout-custom {
+    padding: 60px 0px 0px 0px;
+    min-height: 100vh;
+}
+
+.layout-wrapper .topbar-items {
+    margin: 0;
+}
+.layout-wrapper .topbar-items > li.profile-item a .profile-image {
+	margin-top: 0px;
+}
+
+.layout-wrapper .layout-menu li a .menuitem-badge {
+	margin-top: 0px;
+}
+.layout-wrapper .layout-menu li a i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.pe-blockui {
+	left: auto;
+	right: auto;
+    background: white !important;
+    border-radius: 20px;
+}
+
+.pe-blockui-content {
+	display: grid;
+}
+
+.ui-blockui-content {
+	left: 40% !important;
+	right: 40% !important;
+    background: white !important;
+    border-radius: 10px;
+}
+
+/******************** ******************/
+
+table {
+  border-collapse: collapse;
+}
+
+a, button, button.ui-button {
+    font-size: 12px !important;
+}
+
+.filter-btn .ui-button.ui-button-icon-only {
+    border: 0.14em solid var(--btn-blue-color) !important;
+}
+.clear-filter-btn .ui-button.ui-button-icon-only .ui-icon {
+	margin-left: -0.4rem;
+}
+
+/******************** ******************/
+
+.ui-messages .ui-messages-close {
+	right: 0rem !important;
+    top: 0rem !important;
+    bottom: 0rem !important;
+    margin: auto;
+}
+
+.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
+    /*margin: 0px !important;
+    padding-right: 25px !important;
+    border-radius: 5px !important;*/
+    margin: 5px 0px !important;
+    border-radius: 5px !important;
+    padding: 8px !important;
+    padding-right: 25px !important;
+}
+
+.message-top .ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+.ui-messages-info.message-top, .ui-messages-warn.message-top, .ui-messages-error.message-top, .ui-messages-fatal.message-top {
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+
+.message-top > .ui-messages-info, .message-top > .ui-messages-warn, .message-top > .ui-messages-error, .message-top > .ui-messages-fatal {
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon {
+    /*margin-top: 3px !important;*/
+}
+
+.ui-messages-info-detail, .ui-messages-warn-detail, .ui-messages-error-detail, .ui-messages-fatal-detail, 
+.ui-message-info-detail, .ui-message-warn-detail, .ui-message-error-detail, .ui-message-fatal-detail {
+    /*margin-left: 5px !important;*/    
+    font-weight: normal;
+}
+
+.custom-message.ui-messages-info-detail, .custom-message.ui-messages-warn-detail, .custom-message.ui-messages-error-detail, .custom-message.ui-messages-fatal-detail, 
+.custom-message.ui-message-info-detail, .custom-message.ui-message-warn-detail, .custom-message.ui-message-error-detail, .custom-message.ui-message-fatal-detail {
+    text-align:left;
+    display: flex;
+}
+
+.custom-message .ui-messages-info, .custom-message .ui-messages-warn, .custom-message .ui-messages-error, .custom-message .ui-messages-fatal {
+    text-align:left;
+    display: flex;
+}
+.custom-message .ui-messages-info-summary, .custom-message .ui-messages-warn-summary, .custom-message .ui-messages-error-summary, .custom-message .ui-messages-fatal-summary {
+    margin: 0px !important;
+}
+.custom-message .ui-messages-info-icon, .custom-message .ui-messages-warn-icon, .custom-message .ui-messages-error-icon, .custom-message .ui-messages-fatal-icon {
+    margin: auto !important;
+    margin-right: 10px !important;
+}
+
+/******************** ******************/
+
+
+.container {
+  background-color: #fff;
+  border: 3px #000 solid;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.code {
+  border-radius: 5px;
+  font-size: 30px;
+  height: 60px;
+  width: 50px;
+  border: 1px solid #eee;
+  margin: 1%;
+  text-align: center;
+  font-weight: 300;
+  -moz-appearance: textfield;
+}
+
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.code:valid {
+  border-color: #3498db;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
